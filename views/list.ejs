@@ -9,9 +9,9 @@
   <body>
     <header>
       <div class="header-nav">
-        <a href="/">Blog</a>
+        <a href="/">LOG</a>
         <ul>
-          <li><a href="/list">記事一覧</a></li>
+          <li><a href="/list">Article</a></li>
         </ul>
       </div>
       <p>SMA-RT Blog</p>
@@ -22,7 +22,7 @@
           <li>
             <h2><%= article.title %></h2>
             <p><%= article.summary %></p>
-            <a href="/article/<%= article.id %>">続きを読む</a>
+            <a href="/article/<%= article.id %>">Next</a>
           </li>
         <% }) %>
       </ul>
