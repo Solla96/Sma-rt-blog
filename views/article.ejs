@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <title>SMA-RT LOG</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
  </head>
  <body>
-    
+    <%- include('header'); %>
+    <main>
+        <div class="article">
+            <% if (article.category === 'all') { %>
+             <h1><%= article.title %></h1>
+             <p><%= article.content %></p>
+            <% } %>
+            
+        </div>
+    </main>
  </body>
 </html>
