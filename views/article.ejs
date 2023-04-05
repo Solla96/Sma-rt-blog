@@ -9,15 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
  <body>
-    <%- include('header'); %>
+     include('header'); 
     <main>
         <div class="article">
             <% if (article.category === 'all') { %>
              <h1><%= article.title %></h1>
              <p><%= article.content %></p>
             <% } %>
-            
         </div>
     </main>
+    <footer>
+    <a class="btn sub" href="/list"> Back home</a>
+    </footer>
  </body>
 </html>
